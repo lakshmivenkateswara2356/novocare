@@ -1,0 +1,887 @@
+
+@font-face {
+  font-family: 'Apis';
+  src: url('./assets/Apis/Apis/Apis-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.started {
+  /* Remove this line if you want Apis */
+  font-family: 'Apis', ;
+}
+
+body {
+  margin: 0;
+  font-family: 'Apis';
+  box-sizing: border-box; 
+
+}
+
+
+*{
+    padding:10px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.logodescription{
+    font-family:Apis ;
+    color: #001965;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: -19px;
+}
+
+
+.speakwithconsoller {
+  font-family: inter;
+  font-size: 1px;
+  color: #001965;
+  font-size: 28px;
+  
+
+}
+
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Hide by default */
+.hidden {
+  display: none;
+}
+
+
+.defen {
+  font-family: apis;
+}
+
+.noroeo {
+  margin-right: -22px;
+}
+
+.divider {
+  height: 60px;         /* Adjust as needed */
+  width: px;
+  background-color: #d3d3d3; /* Light gray, similar to your image */
+  margin: 0 20px;        /* Optional spacing around the divider */
+}
+
+.rferer {
+  margin-left: -22px;
+}
+
+
+
+/* Popup Box */
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  font-family: inter;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Continue Button */
+.continue-btn {
+  margin-top: 1rem;
+  background-color:#001965;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.aligningbuttonsis {
+  align-items: center;
+  text-align: center;
+}
+
+.disclaimerele {
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+.letsconnect {
+  color: #5d5c5c;
+  font-size: 15px;
+  font-family: inter;
+}
+
+
+
+.letsconnecte {
+  color: #5d5c5c;
+  font-size: 18px;
+  font-family: Apis;
+font-weight:500;
+  margin-top: -20px;
+}
+.logoparagraph{
+    font-family: Apis;
+    font-size: 24px;
+    font-weight: 400;
+    color: #5d5c5c;
+    line-height: 40px;
+    width: 1091px;
+    margin-bottom: 55px;
+    margin-top: -15px;
+    letter-spacing: 0%;
+}
+.secriptioncont{
+    margin-top: -35px;
+    
+   
+}
+
+.secriptioncont1 {
+  display: none;
+}
+
+.buttoncontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttoncontent p{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16.97px;
+    line-height: 43.59px;
+    letter-spacing: 0.26px;
+}
+.buttoncontent h1{
+   font-family: "Inter";
+   font-weight: 600;
+   font-size: 23.87px;
+   line-height: 100%;
+
+}
+
+/* .vediocont{
+    background-color: #0E0D0D;
+    padding:20px;
+   border-radius: 20px;
+   margin-top: 20px;
+}
+.vediocont video{
+    border-radius: 20px;
+} */
+.content{
+    margin-left: 100px;
+   
+
+   
+}
+.content h1{
+    font-family: Apis;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    letter-spacing: 0%;
+  
+
+}
+.content p{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: -25px;
+    letter-spacing: 0%;
+    
+   
+}
+.botttomcontent{
+    display: flex;
+    flex-direction: row;
+    
+  
+    
+}
+
+.call-icon {
+  height: 70px;
+  margin-left: -12px;
+  margin-right: 5px;
+}
+
+.call-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  height: 68px;
+  width: 70%;
+  border-radius: 50px;
+  border: 9px solid #cdebf7; 
+  background-color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 rgba(0, 0, 0, 0.05);
+}
+
+
+.call-info1 {
+ display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  height: 68px;
+  width: 84%;
+  border-radius: 50px;
+  border: 9px solid #cdebf7; 
+  background-color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 rgba(0, 0, 0, 0.05);
+
+}
+
+.call-text {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footercontainer {
+  background-color: #ffffff;
+  padding: 40px 60px;
+  align-items: center;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+
+}
+
+.image1 {
+  background-image: url("assets/AD22-11 (3).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100% auto; /* 100% of the viewport height */
+  margin-bottom: 55px;
+  padding: 55px;
+}
+
+.video-caption1 {
+  display: none;
+  color: #001965;
+}
+
+.call-number {
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.call-numbere {
+   font-weight: 600;
+  color: #001965;
+  text-decoration: none;
+  font-family: Apis;
+  font-size: 14px;
+  width: 150px;
+  margin-left: -36px;
+}
+
+.call-hours {
+  color: #8a8a8a;
+  font-size: 15px;
+  margin-top: -17px;
+}
+
+.call-icon1 {
+  height: 40px;
+}
+
+.mobiimage {
+  display: none;
+}
+
+.call-number {
+  font-family: Apis;
+  margin-right: -16px;
+  color:#001965;
+}
+
+.footernova2 {
+  margin-left: 18px;
+  height: 70px;
+}
+
+.bottomnovanav {
+  text-decoration: none !important;
+}
+
+.talsktoconsoler {
+  text-decoration: none;
+  color:#001965 ;
+}
+
+.comitnudisclimer {
+  color: white;
+  text-decoration: none;
+}
+
+.navlinksstyling {
+  text-decoration: none;
+  font-family: Apis;
+  color: #001965 ;
+}
+
+.bottomnovanav {
+  color: #001965;
+  margin-top: 20px;
+  font-weight: 500;
+  font-family: Apis;
+  margin-bottom: 30px;
+}
+
+
+.footeralignemr {
+  text-align: center !important;
+  align-items: center !important;
+  margin-left: 327px;
+}
+
+.paragraphele {
+  width: 700px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Apis;
+  margin-top: -27px;
+  align-items: center !important;
+  text-align: center !important;
+  color: #3F3E3E;
+}
+
+.aliginignthe {
+  text-align: center !important;
+  font-family: Apis;
+  align-items: center !important;
+  width:1000px;
+  margin-left: -155px;
+}
+
+
+.address {
+  margin-top: 23px;
+  font-family: Apis;
+}
+
+.Doctor {
+margin-left: 130px;
+}
+
+.bottombuttons {
+  display: flex; flex-direction: row; 
+}
+
+.Doctor h1{
+   
+     font-family:Apis;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 60px;
+    letter-spacing: 0%;
+}
+.image img {
+    height:30vw;
+    width:auto;
+}
+
+@media (max-width: 768px) {
+    .botttomcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.image img {
+    height: auto;
+    margin-left: 50px;
+   
+}
+
+.aliginignthe {
+  width:370px;
+  font-family: Apis;
+ margin-left: 28px;
+}
+
+.footeralignemr {
+  margin: 0px;
+}
+.bottomnovanav {
+  color: #222;
+  margin-top: 20px;
+  font-weight: 500;
+  
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.footercontainer {
+    background-color: #ffffff;
+    padding: 0px 20px !important;
+    font-family: 'Segoe UI', sans-serif;
+    
+ 
+    align-items: start;
+    margin-left: -40px;
+    
+    text-align: left;
+}
+
+
+
+
+
+ .paragraphele {
+  width: 400px !important;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: Apis;
+  color: #3F3E3E;
+}
+
+
+.novanordcowb {
+  height: 30px;
+}
+
+
+
+.video-caption1 {
+  display: block;
+  margin-top: 12px;
+  margin-left: -22px;
+}
+
+
+.iernri {
+  margin-top: -18px;
+}
+
+
+.secriptioncont1 {
+  display:block;
+  margin-top: -33px;
+  margin-left: -20px;
+}
+
+.mobiimage {
+  display:block;
+}
+
+.call-icon1 {
+  height: 40px;
+  margin-left: 18px;
+} 
+
+.image1 {
+ background-image: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  
+padding: 0px;
+margin-left: -22px;
+
+  margin-bottom: 0px;
+}
+
+/* Stack columns on mobile */
+.bottombuttons {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Text content styling */
+.content, .Doctor {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+
+
+.speakwithconsoller,
+.Doctor h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #002b5c;
+  width: 320px;
+}
+
+.letsconnect {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Call section */
+.call-info, .call-info1 {
+  display: flex;
+  align-items: center;
+  
+  margin-top: 10px;
+  cursor: pointer;
+  width: 250px;
+  height: 82px;
+}
+
+.call-info1  {
+  margin-left: -13px;
+}
+
+
+
+
+
+/* Modal Styling */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.15);   /* Semi-transparent white */
+  backdrop-filter: blur(10px);             /* Blurring the background */
+  -webkit-backdrop-filter: blur(10px); 
+  display: flex;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 999;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.disclaimerele {
+  margin-bottom: 10px;
+  
+}
+
+.continue-btn {
+  background-color: #001965;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.Doctor {
+  margin-left: -10px;
+  margin-top: -32px;
+}
+
+.speakwithconsoller {
+  margin-bottom: 20px;
+}
+
+.call-icon {
+  height: 60px;
+ margin-right: 20px;
+ margin-left: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive font sizes */
+@media (max-width: 480px) {
+  .speakwithconsoller,
+  .Doctor h1 {
+    font-size: 18px;
+  }
+
+
+
+  .letsconnect,
+  .call-hours,
+  .call-number {
+    font-size: 14px;
+  }
+
+ 
+}
+
+
+.content{
+    margin-left: -20px;
+}
+
+.content h1 {
+    font-size: 18px;
+    flex-wrap: nowrap;
+    font-family: Apis;
+      line-height: 10px;
+}
+.content p {
+    font-size: 18px;
+}
+
+.call-info {
+  width: 250px;
+  height: 82px;
+}
+
+.secriptioncont{
+    padding:0px 5px;
+    
+}
+.logoparagraph{
+    text-align: left;
+    width: 400px;
+    margin-bottom: 0px;
+    font-family: Apis;
+    line-height: 34px;
+    font-size: 13px;
+   margin-top: -41px;
+}
+.logodescription{
+    text-align: left;
+    font-size: 18px;
+    margin-left: -18px;
+}
+
+.image {
+  display: none;
+}
+
+
+
+
+
+}
+.video-wrapper {
+  position: relative;
+  width: 95vw;
+  height: 100vh;
+  background-color:  black;
+  overflow: hidden;
+  margin-top: 30px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.main-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Play button in center */
+/* .play-btn {
+  width:210.87px;
+    height:61.43px;
+    border-radius: 13.08px;
+    border:solid 1px #0E0D0D;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 16.3px;
+    line-height: 43.59px;
+    letter-spacing: 0.26px;
+} */
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+}
+
+.disclaimer-text {
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+}
+.play-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Content positioned inside video */
+.video-caption {
+
+ 
+ margin-left:2px;
+  
+  font-size: 22px;
+  max-width: 300px;
+}
+
+
+.video-subtitle {
+  font-size: 23px;
+margin-bottom: -22px !important;
+font-family: inter;
+color: #001965;
+  opacity: 0.8;
+  font-family: Apis;
+  margin: 0;
+  margin-left: 4px;
+}
+
+.video-title {
+  font-size: 34px;
+  font-weight: bold;
+  width: 500px;
+  color: #001965;
+  font-family: Apis !important;
+  margin: 5px 0;
+  font-family: inter;
+}
+
+.talk-btn {
+  width:210.87px;
+    height:61.43px;
+    border-radius: 13.08px;
+    border:solid 1px #001965;
+    font-family: Apis;
+    font-weight: 600;
+    font-size: 17.3px;
+    font-family: inter;
+    line-height: 43.59px;
+    letter-spacing: 0.26px;
+    background-color: transparent;
+    color: #001965;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .video-caption {
+    bottom: 20px;
+    margin-left: -7px;
+    
+    
+
+  
+  }
+
+  .mobiimage {
+    width:120% ;
+    height:100%;
+    margin-left: -10px;
+    margin-top: 70px;
+  }
+
+
+  .desktop {
+    display: none;
+  }
+
+  .disclaimer-text {
+  line-height: 27px;  /* or use 1.8, 24px, etc. */
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+ 
+
+  .video-title {
+    font-size: 10px;
+    width: 130px;
+    margin-left: -17px;
+    margin-top: -14px;
+  }
+
+
+  .video-subtitle {
+    font-size: 10px;
+  }
+  .talk-btn {
+    font-size: 9px;
+    padding: 0px;
+    height: 45px;
+    width: 110px;
+    margin-top: -32px !important;
+  }
+
+  .play-btn {
+    width: 50px;
+    height: 50px;
+  }
+   .video-wrapper {
+    height: 50vh;
+    width: 100vw; /* ✅ Limit height on mobile */
+  
+  }
+}
